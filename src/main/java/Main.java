@@ -3,9 +3,8 @@ import java.util.Map;
 public class Main {
 
     public static void main(String... args) {
-        var writer = new TextWriter();
-        var url = "https://s3n.simbirsoft.com";
-//        var url = args[0];
+       var writer = new TextWriter();
+       var url = args[0];
 
         if (writer.isValidURL(url)) {
             writer.addTextInFile(url);
